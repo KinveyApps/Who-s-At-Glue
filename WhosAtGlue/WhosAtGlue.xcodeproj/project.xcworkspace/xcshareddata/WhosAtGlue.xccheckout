@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D30A77BD-3DAB-4750-8C09-710E75BAB555</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WhosAtGlue</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5E01D27C-72FF-4A21-B0FD-59E3F36AE5ED</key>
+		<string>ssh://github.com/KinveyApps/Who-s-At-Glue.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WhosAtGlue/WhosAtGlue.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5E01D27C-72FF-4A21-B0FD-59E3F36AE5ED</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/KinveyApps/Who-s-At-Glue.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5E01D27C-72FF-4A21-B0FD-59E3F36AE5ED</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5E01D27C-72FF-4A21-B0FD-59E3F36AE5ED</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Who-s-At-Glue</string>
+		</dict>
+	</array>
+</dict>
+</plist>

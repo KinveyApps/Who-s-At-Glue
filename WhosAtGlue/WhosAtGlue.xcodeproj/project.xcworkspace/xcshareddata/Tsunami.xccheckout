@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8226CC72-1AEB-44F4-9A69-810A95B15160</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Tsunami</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C195BAE9-25F7-401B-88B7-047A500A580D</key>
+		<string>https://github.com/Kinvey/TsunamiAlert</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Tsunami/Tsunami.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C195BAE9-25F7-401B-88B7-047A500A580D</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Kinvey/TsunamiAlert</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C195BAE9-25F7-401B-88B7-047A500A580D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C195BAE9-25F7-401B-88B7-047A500A580D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TsunamiAlert</string>
+		</dict>
+	</array>
+</dict>
+</plist>

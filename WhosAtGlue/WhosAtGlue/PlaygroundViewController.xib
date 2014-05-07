@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlaygroundViewController">
+            <connections>
+                <outlet property="explainTextView" destination="uWa-lc-FG8" id="VCp-Du-kFQ"/>
+                <outlet property="radiusview" destination="nqn-dS-gZ2" id="TRP-ya-W4m"/>
+                <outlet property="sampleDataLabel" destination="Ggc-cB-P9u" id="Kgs-Ob-akO"/>
+                <outlet property="tableView" destination="uh9-JR-JMC" id="avo-oG-TkL"/>
+                <outlet property="toolbar" destination="jyB-Ej-cnc" id="miP-9A-LsP"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jyB-Ej-cnc">
+                    <rect key="frame" x="66" y="22" width="254" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <items>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="NK7-Sj-Spm"/>
+                        <barButtonItem title="Close" id="2wR-CD-dY4">
+                            <connections>
+                                <action selector="close:" destination="-1" id="uqn-tI-N3W"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                    <color key="tintColor" red="1" green="0.81176470590000005" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </toolbar>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nqn-dS-gZ2" customClass="RadiusPlusView">
+                    <rect key="frame" x="6" y="22" width="60" height="546"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="frv-r5-oRL"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="animated" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="250" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="uh9-JR-JMC">
+                    <rect key="frame" x="66" y="66" width="254" height="502"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <textView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" id="uWa-lc-FG8">
+                        <rect key="frame" x="0.0" y="363" width="254" height="139"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <mutableString key="text">This screen shows the raw locality data collected by Who's at Glue. The bar graphs represent how many people were closest to each beacon at any given point in time. The chart on the left shows an aggregate of how many people are within an approximate distance from the beacon.
+
+Because the beacons themselves merely broadcast an identifying signal, this location data is collected by each user's app. The data is then sent to a backend powered by Kinvey, where we anonymously aggregate the information and return it to the app on the screen you see here.</mutableString>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="te9-xF-4Q5"/>
+                        <outlet property="delegate" destination="-1" id="8tV-s5-q84"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STATS FOR NERDS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdP-w4-Bth">
+                    <rect key="frame" x="83" y="33" width="154" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" red="0.64705882349999999" green="0.10980392160000001" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SAMPLE DATA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggc-cB-P9u">
+                    <rect key="frame" x="66" y="283" width="254" height="23"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                    <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647059999998" green="0.35294117650000001" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="uh9-JR-JMC" firstAttribute="top" secondItem="Ggc-cB-P9u" secondAttribute="bottom" constant="-240" id="5pm-OU-HWW"/>
+                <constraint firstItem="uh9-JR-JMC" firstAttribute="trailing" secondItem="jyB-Ej-cnc" secondAttribute="trailing" id="7UB-Xy-seX"/>
+                <constraint firstItem="tdP-w4-Bth" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" id="8cA-ZM-OK5"/>
+                <constraint firstItem="uh9-JR-JMC" firstAttribute="top" secondItem="jyB-Ej-cnc" secondAttribute="bottom" id="8ch-eL-YVa"/>
+                <constraint firstAttribute="bottom" secondItem="uh9-JR-JMC" secondAttribute="bottom" id="B2R-HY-7Uv"/>
+                <constraint firstItem="nqn-dS-gZ2" firstAttribute="top" secondItem="1" secondAttribute="top" constant="22" id="BQK-6i-Lxe"/>
+                <constraint firstAttribute="bottom" secondItem="nqn-dS-gZ2" secondAttribute="bottom" id="CoF-X3-ofA"/>
+                <constraint firstItem="Ggc-cB-P9u" firstAttribute="centerX" secondItem="uh9-JR-JMC" secondAttribute="centerX" id="K23-sK-q15"/>
+                <constraint firstAttribute="trailing" secondItem="uh9-JR-JMC" secondAttribute="trailing" id="SSK-Ke-VZD"/>
+                <constraint firstItem="jyB-Ej-cnc" firstAttribute="centerY" secondItem="tdP-w4-Bth" secondAttribute="centerY" constant="0.5" id="Saw-52-z8R"/>
+                <constraint firstItem="nqn-dS-gZ2" firstAttribute="trailing" secondItem="jyB-Ej-cnc" secondAttribute="leading" id="fvA-Eu-6SC"/>
+                <constraint firstItem="nqn-dS-gZ2" firstAttribute="top" secondItem="jyB-Ej-cnc" secondAttribute="top" id="iRR-DX-O5x"/>
+                <constraint firstItem="Ggc-cB-P9u" firstAttribute="leading" secondItem="uh9-JR-JMC" secondAttribute="leading" id="j3t-re-TP6"/>
+                <constraint firstItem="nqn-dS-gZ2" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="6" id="p3G-75-cy3"/>
+                <constraint firstItem="uh9-JR-JMC" firstAttribute="leading" secondItem="jyB-Ej-cnc" secondAttribute="leading" id="q89-Ab-JJh"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

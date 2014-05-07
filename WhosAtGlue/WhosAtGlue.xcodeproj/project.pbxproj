@@ -1,0 +1,707 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		270EC36318C4DB8D009759F6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270EC36218C4DB8D009759F6 /* CoreLocation.framework */; };
+		270EC36518C4DB93009759F6 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 270EC36418C4DB93009759F6 /* libsqlite3.dylib */; };
+		270EC36718C4DBA1009759F6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270EC36618C4DBA1009759F6 /* MobileCoreServices.framework */; };
+		270EC36918C4DBA6009759F6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270EC36818C4DBA6009759F6 /* CFNetwork.framework */; };
+		270EC36B18C4DBC9009759F6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270EC36A18C4DBC9009759F6 /* SystemConfiguration.framework */; };
+		270EC36D18C4DBE5009759F6 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270EC36C18C4DBE5009759F6 /* Social.framework */; };
+		270EC36F18C4DBEC009759F6 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270EC36E18C4DBEC009759F6 /* Accounts.framework */; };
+		2727900118D8B8E7006BFBF3 /* Info1TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2727900018D8B8E7006BFBF3 /* Info1TableViewController.m */; };
+		2727900F18D8E5B8006BFBF3 /* Info2TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2727900E18D8E5B8006BFBF3 /* Info2TableViewController.m */; };
+		2727901218D9E5FC006BFBF3 /* EventModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2727901118D9E5FC006BFBF3 /* EventModel.m */; };
+		272A8C4E190587F100FDCF08 /* UserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 272A8C4D190587F100FDCF08 /* UserCell.m */; };
+		274381F019182ADC00E45422 /* roomBeacons.json in Resources */ = {isa = PBXBuildFile; fileRef = 274381ED19182ADC00E45422 /* roomBeacons.json */; };
+		274381F119182ADC00E45422 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = 274381EE19182ADC00E45422 /* events.json */; };
+		274966BE18E31CC0002DDF7F /* EmailPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 274966BD18E31CC0002DDF7F /* EmailPassword.storyboard */; };
+		274966C118E31D0E002DDF7F /* EmailPwdLoginTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274966C018E31D0E002DDF7F /* EmailPwdLoginTableViewController.m */; };
+		274966C418E35CE6002DDF7F /* KinveyInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274966C318E35CE6002DDF7F /* KinveyInfoTableViewController.m */; };
+		274966C618E35CF0002DDF7F /* KinveyInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 274966C518E35CF0002DDF7F /* KinveyInfo.storyboard */; };
+		275748D418D74BA200E5D561 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275748D218D74BA200E5D561 /* LoginViewController.m */; };
+		275748D518D74BA200E5D561 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 275748D318D74BA200E5D561 /* LoginViewController.xib */; };
+		2799EB2B18DA0CF700818CE7 /* MainFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2799EB2A18DA0CF700818CE7 /* MainFlow.storyboard */; };
+		2799EB2E18DA0D0D00818CE7 /* UserListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2799EB2D18DA0D0D00818CE7 /* UserListTableViewController.m */; };
+		2799EB3218DA1C3800818CE7 /* KCSUser+WhosAtGlue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2799EB3118DA1C3800818CE7 /* KCSUser+WhosAtGlue.m */; };
+		279CB6B518CDDB9B00E39E42 /* TimeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 279CB6B418CDDB9B00E39E42 /* TimeHeaderView.m */; };
+		279CB6B818CDE03100E39E42 /* BarGraphCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 279CB6B718CDE03100E39E42 /* BarGraphCell.m */; };
+		279CB6BB18CDE03C00E39E42 /* BarGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 279CB6BA18CDE03C00E39E42 /* BarGraphView.m */; };
+		279CB6BE18CDF82100E39E42 /* UIColor+WhosAtGlue.m in Sources */ = {isa = PBXBuildFile; fileRef = 279CB6BD18CDF82100E39E42 /* UIColor+WhosAtGlue.m */; };
+		279CB6CA18CE360300E39E42 /* PlaygroundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 279CB6C818CE360300E39E42 /* PlaygroundViewController.m */; };
+		279CB6CB18CE360300E39E42 /* PlaygroundViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 279CB6C918CE360300E39E42 /* PlaygroundViewController.xib */; };
+		27A1E56918FB3EDA00F2D96F /* InfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A1E56818FB3EDA00F2D96F /* InfoTableViewController.m */; };
+		27A554C0190E9EAB00ECB171 /* PrivacyPolicy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 27A554BF190E9EAB00ECB171 /* PrivacyPolicy.txt */; };
+		27A554D7190FE0DA00ECB171 /* KinveyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A554D6190FE0DA00ECB171 /* KinveyKit.framework */; };
+		27A554D919107C5000ECB171 /* ExtraLicenses.txt in Resources */ = {isa = PBXBuildFile; fileRef = 27A554D819107C5000ECB171 /* ExtraLicenses.txt */; };
+		27B5F4F718C1191500BFF9A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B5F4F618C1191500BFF9A1 /* Foundation.framework */; };
+		27B5F4F918C1191500BFF9A1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B5F4F818C1191500BFF9A1 /* CoreGraphics.framework */; };
+		27B5F4FB18C1191500BFF9A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B5F4FA18C1191500BFF9A1 /* UIKit.framework */; };
+		27B5F50118C1191500BFF9A1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27B5F4FF18C1191500BFF9A1 /* InfoPlist.strings */; };
+		27B5F50318C1191500BFF9A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B5F50218C1191500BFF9A1 /* main.m */; };
+		27B5F50718C1191500BFF9A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B5F50618C1191500BFF9A1 /* AppDelegate.m */; };
+		27B5F50918C1191500BFF9A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27B5F50818C1191500BFF9A1 /* Images.xcassets */; };
+		27B5F52718C26D8400BFF9A1 /* DistanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B5F52618C26D8400BFF9A1 /* DistanceViewController.m */; };
+		27BBA48818E5C8AB00E6F0A1 /* KCSBeaconInfo+WhosAtGlue.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BBA48718E5C8AB00E6F0A1 /* KCSBeaconInfo+WhosAtGlue.m */; };
+		27C0C53E18EF4BC700D965A2 /* UserProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C0C53D18EF4BC700D965A2 /* UserProfileViewController.m */; };
+		27C0C54118F4164D00D965A2 /* PushWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C0C54018F4164D00D965A2 /* PushWrapper.m */; };
+		27C0C54918F5E5F700D965A2 /* RadiusPlusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C0C54818F5E5F700D965A2 /* RadiusPlusView.m */; };
+		27C0C54C18F822CB00D965A2 /* NSError+WhosAtGlue.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C0C54B18F822CB00D965A2 /* NSError+WhosAtGlue.m */; };
+		27D1F56018DC6B82005CD1B7 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D1F55F18DC6B82005CD1B7 /* MainViewController.m */; };
+		27D1F56318DC70CB005CD1B7 /* RadiusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D1F56218DC70CB005CD1B7 /* RadiusView.m */; };
+		27D1F56718DC7DE6005CD1B7 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D1F56518DC7DE6005CD1B7 /* SettingsTableViewController.m */; };
+		27D1F57518DC8130005CD1B7 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27D1F57418DC8130005CD1B7 /* Settings.storyboard */; };
+		27D1F57818DC8D61005CD1B7 /* CircleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D1F57718DC8D61005CD1B7 /* CircleImageView.m */; };
+		27E636BC18EB4E1F0032B532 /* ComeChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E636BB18EB4E1F0032B532 /* ComeChatViewController.m */; };
+		27E636BF18EDB2270032B532 /* PasswordResetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E636BE18EDB2270032B532 /* PasswordResetViewController.m */; };
+		27E7E48E191A551D00EB4523 /* BeaconModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E7E487191A551D00EB4523 /* BeaconModel.m */; };
+		27E7E48F191A551D00EB4523 /* CLBeacon+WhosAtGlue.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E7E489191A551D00EB4523 /* CLBeacon+WhosAtGlue.m */; };
+		27E7E490191A551D00EB4523 /* KCSUser+Beacons.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E7E48B191A551D00EB4523 /* KCSUser+Beacons.m */; };
+		27E7E491191A551D00EB4523 /* NSDictionary+WhosAtGlue.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E7E48D191A551D00EB4523 /* NSDictionary+WhosAtGlue.m */; };
+		27E833E51908029D00DC162E /* LicenseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E833E41908029D00DC162E /* LicenseTableViewController.m */; };
+		27E833E7190802B600DC162E /* Pods-WhosAtGlue-acknowledgements.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 27E833E6190802B600DC162E /* Pods-WhosAtGlue-acknowledgements.markdown */; };
+		27EAD2C518D7840A00CEAF10 /* UserProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27EAD2C418D7840A00CEAF10 /* UserProfile.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		270EC36218C4DB8D009759F6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		270EC36418C4DB93009759F6 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		270EC36618C4DBA1009759F6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		270EC36818C4DBA6009759F6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		270EC36A18C4DBC9009759F6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		270EC36C18C4DBE5009759F6 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		270EC36E18C4DBEC009759F6 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		271435171902ED0900999C88 /* KCSTimeConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCSTimeConstants.h; sourceTree = "<group>"; };
+		27278FFF18D8B8E7006BFBF3 /* Info1TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Info1TableViewController.h; sourceTree = "<group>"; };
+		2727900018D8B8E7006BFBF3 /* Info1TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Info1TableViewController.m; sourceTree = "<group>"; };
+		2727900D18D8E5B8006BFBF3 /* Info2TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Info2TableViewController.h; sourceTree = "<group>"; };
+		2727900E18D8E5B8006BFBF3 /* Info2TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Info2TableViewController.m; sourceTree = "<group>"; };
+		2727901018D9E5FC006BFBF3 /* EventModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventModel.h; sourceTree = "<group>"; };
+		2727901118D9E5FC006BFBF3 /* EventModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventModel.m; sourceTree = "<group>"; };
+		272A8C4C190587F100FDCF08 /* UserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCell.h; sourceTree = "<group>"; };
+		272A8C4D190587F100FDCF08 /* UserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCell.m; sourceTree = "<group>"; };
+		274381ED19182ADC00E45422 /* roomBeacons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = roomBeacons.json; sourceTree = "<group>"; };
+		274381EE19182ADC00E45422 /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
+		274966BD18E31CC0002DDF7F /* EmailPassword.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EmailPassword.storyboard; sourceTree = "<group>"; };
+		274966BF18E31D0E002DDF7F /* EmailPwdLoginTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailPwdLoginTableViewController.h; sourceTree = "<group>"; };
+		274966C018E31D0E002DDF7F /* EmailPwdLoginTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailPwdLoginTableViewController.m; sourceTree = "<group>"; };
+		274966C218E35CE6002DDF7F /* KinveyInfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KinveyInfoTableViewController.h; sourceTree = "<group>"; };
+		274966C318E35CE6002DDF7F /* KinveyInfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KinveyInfoTableViewController.m; sourceTree = "<group>"; };
+		274966C518E35CF0002DDF7F /* KinveyInfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KinveyInfo.storyboard; sourceTree = "<group>"; };
+		275748D118D74BA200E5D561 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		275748D218D74BA200E5D561 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		275748D318D74BA200E5D561 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		2799EB2A18DA0CF700818CE7 /* MainFlow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainFlow.storyboard; sourceTree = "<group>"; };
+		2799EB2C18DA0D0D00818CE7 /* UserListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserListTableViewController.h; sourceTree = "<group>"; };
+		2799EB2D18DA0D0D00818CE7 /* UserListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserListTableViewController.m; sourceTree = "<group>"; };
+		2799EB3018DA1C3800818CE7 /* KCSUser+WhosAtGlue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KCSUser+WhosAtGlue.h"; sourceTree = "<group>"; };
+		2799EB3118DA1C3800818CE7 /* KCSUser+WhosAtGlue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KCSUser+WhosAtGlue.m"; sourceTree = "<group>"; };
+		279CB6B318CDDB9B00E39E42 /* TimeHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeHeaderView.h; sourceTree = "<group>"; };
+		279CB6B418CDDB9B00E39E42 /* TimeHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeHeaderView.m; sourceTree = "<group>"; };
+		279CB6B618CDE03100E39E42 /* BarGraphCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarGraphCell.h; sourceTree = "<group>"; };
+		279CB6B718CDE03100E39E42 /* BarGraphCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarGraphCell.m; sourceTree = "<group>"; };
+		279CB6B918CDE03C00E39E42 /* BarGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarGraphView.h; sourceTree = "<group>"; };
+		279CB6BA18CDE03C00E39E42 /* BarGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarGraphView.m; sourceTree = "<group>"; };
+		279CB6BC18CDF82100E39E42 /* UIColor+WhosAtGlue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+WhosAtGlue.h"; sourceTree = "<group>"; };
+		279CB6BD18CDF82100E39E42 /* UIColor+WhosAtGlue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+WhosAtGlue.m"; sourceTree = "<group>"; };
+		279CB6C718CE360300E39E42 /* PlaygroundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaygroundViewController.h; sourceTree = "<group>"; };
+		279CB6C818CE360300E39E42 /* PlaygroundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaygroundViewController.m; sourceTree = "<group>"; };
+		279CB6C918CE360300E39E42 /* PlaygroundViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaygroundViewController.xib; sourceTree = "<group>"; };
+		27A1E56718FB3EDA00F2D96F /* InfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoTableViewController.h; sourceTree = "<group>"; };
+		27A1E56818FB3EDA00F2D96F /* InfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoTableViewController.m; sourceTree = "<group>"; };
+		27A554BF190E9EAB00ECB171 /* PrivacyPolicy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PrivacyPolicy.txt; sourceTree = "<group>"; };
+		27A554D6190FE0DA00ECB171 /* KinveyKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KinveyKit.framework; sourceTree = "<group>"; };
+		27A554D819107C5000ECB171 /* ExtraLicenses.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ExtraLicenses.txt; sourceTree = "<group>"; };
+		27B5F4F318C1191500BFF9A1 /* WhosAtGlue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhosAtGlue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27B5F4F618C1191500BFF9A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		27B5F4F818C1191500BFF9A1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		27B5F4FA18C1191500BFF9A1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		27B5F4FE18C1191500BFF9A1 /* WhosAtGlue-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WhosAtGlue-Info.plist"; sourceTree = "<group>"; };
+		27B5F50018C1191500BFF9A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		27B5F50218C1191500BFF9A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		27B5F50418C1191500BFF9A1 /* WhosAtGlue-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WhosAtGlue-Prefix.pch"; sourceTree = "<group>"; };
+		27B5F50518C1191500BFF9A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		27B5F50618C1191500BFF9A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		27B5F50818C1191500BFF9A1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		27B5F50F18C1191500BFF9A1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		27B5F52518C26D8400BFF9A1 /* DistanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistanceViewController.h; sourceTree = "<group>"; };
+		27B5F52618C26D8400BFF9A1 /* DistanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistanceViewController.m; sourceTree = "<group>"; };
+		27BBA48618E5C8AB00E6F0A1 /* KCSBeaconInfo+WhosAtGlue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KCSBeaconInfo+WhosAtGlue.h"; sourceTree = "<group>"; };
+		27BBA48718E5C8AB00E6F0A1 /* KCSBeaconInfo+WhosAtGlue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KCSBeaconInfo+WhosAtGlue.m"; sourceTree = "<group>"; };
+		27C0C53C18EF4BC700D965A2 /* UserProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserProfileViewController.h; sourceTree = "<group>"; };
+		27C0C53D18EF4BC700D965A2 /* UserProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserProfileViewController.m; sourceTree = "<group>"; };
+		27C0C53F18F4164D00D965A2 /* PushWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushWrapper.h; sourceTree = "<group>"; };
+		27C0C54018F4164D00D965A2 /* PushWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushWrapper.m; sourceTree = "<group>"; };
+		27C0C54718F5E5F700D965A2 /* RadiusPlusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadiusPlusView.h; sourceTree = "<group>"; };
+		27C0C54818F5E5F700D965A2 /* RadiusPlusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadiusPlusView.m; sourceTree = "<group>"; };
+		27C0C54A18F822CB00D965A2 /* NSError+WhosAtGlue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+WhosAtGlue.h"; sourceTree = "<group>"; };
+		27C0C54B18F822CB00D965A2 /* NSError+WhosAtGlue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+WhosAtGlue.m"; sourceTree = "<group>"; };
+		27D1F55E18DC6B82005CD1B7 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		27D1F55F18DC6B82005CD1B7 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		27D1F56118DC70CB005CD1B7 /* RadiusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadiusView.h; sourceTree = "<group>"; };
+		27D1F56218DC70CB005CD1B7 /* RadiusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadiusView.m; sourceTree = "<group>"; };
+		27D1F56418DC7DE6005CD1B7 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
+		27D1F56518DC7DE6005CD1B7 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
+		27D1F57418DC8130005CD1B7 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		27D1F57618DC8D61005CD1B7 /* CircleImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleImageView.h; sourceTree = "<group>"; };
+		27D1F57718DC8D61005CD1B7 /* CircleImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleImageView.m; sourceTree = "<group>"; };
+		27E636BA18EB4E1F0032B532 /* ComeChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComeChatViewController.h; sourceTree = "<group>"; };
+		27E636BB18EB4E1F0032B532 /* ComeChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComeChatViewController.m; sourceTree = "<group>"; };
+		27E636BD18EDB2270032B532 /* PasswordResetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordResetViewController.h; sourceTree = "<group>"; };
+		27E636BE18EDB2270032B532 /* PasswordResetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordResetViewController.m; sourceTree = "<group>"; };
+		27E7E486191A551D00EB4523 /* BeaconModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconModel.h; sourceTree = "<group>"; };
+		27E7E487191A551D00EB4523 /* BeaconModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconModel.m; sourceTree = "<group>"; };
+		27E7E488191A551D00EB4523 /* CLBeacon+WhosAtGlue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLBeacon+WhosAtGlue.h"; sourceTree = "<group>"; };
+		27E7E489191A551D00EB4523 /* CLBeacon+WhosAtGlue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLBeacon+WhosAtGlue.m"; sourceTree = "<group>"; };
+		27E7E48A191A551D00EB4523 /* KCSUser+Beacons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KCSUser+Beacons.h"; sourceTree = "<group>"; };
+		27E7E48B191A551D00EB4523 /* KCSUser+Beacons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KCSUser+Beacons.m"; sourceTree = "<group>"; };
+		27E7E48C191A551D00EB4523 /* NSDictionary+WhosAtGlue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+WhosAtGlue.h"; sourceTree = "<group>"; };
+		27E7E48D191A551D00EB4523 /* NSDictionary+WhosAtGlue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+WhosAtGlue.m"; sourceTree = "<group>"; };
+		27E833E31908029D00DC162E /* LicenseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LicenseTableViewController.h; sourceTree = "<group>"; };
+		27E833E41908029D00DC162E /* LicenseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LicenseTableViewController.m; sourceTree = "<group>"; };
+		27E833E6190802B600DC162E /* Pods-WhosAtGlue-acknowledgements.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "Pods-WhosAtGlue-acknowledgements.markdown"; path = "../Pods/Pods-WhosAtGlue-acknowledgements.markdown"; sourceTree = "<group>"; };
+		27EAD2C418D7840A00CEAF10 /* UserProfile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserProfile.storyboard; sourceTree = "<group>"; };
+		2D163241A8734E498EA46E93 /* Pods-WhosAtGlue.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhosAtGlue.xcconfig"; path = "Pods/Pods-WhosAtGlue.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27B5F4F018C1191500BFF9A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				270EC36F18C4DBEC009759F6 /* Accounts.framework in Frameworks */,
+				270EC36D18C4DBE5009759F6 /* Social.framework in Frameworks */,
+				270EC36B18C4DBC9009759F6 /* SystemConfiguration.framework in Frameworks */,
+				270EC36918C4DBA6009759F6 /* CFNetwork.framework in Frameworks */,
+				27A554D7190FE0DA00ECB171 /* KinveyKit.framework in Frameworks */,
+				270EC36718C4DBA1009759F6 /* MobileCoreServices.framework in Frameworks */,
+				270EC36518C4DB93009759F6 /* libsqlite3.dylib in Frameworks */,
+				270EC36318C4DB8D009759F6 /* CoreLocation.framework in Frameworks */,
+				27B5F4F918C1191500BFF9A1 /* CoreGraphics.framework in Frameworks */,
+				27B5F4FB18C1191500BFF9A1 /* UIKit.framework in Frameworks */,
+				27B5F4F718C1191500BFF9A1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2727901318D9E601006BFBF3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2799EB3018DA1C3800818CE7 /* KCSUser+WhosAtGlue.h */,
+				2799EB3118DA1C3800818CE7 /* KCSUser+WhosAtGlue.m */,
+				2727901018D9E5FC006BFBF3 /* EventModel.h */,
+				2727901118D9E5FC006BFBF3 /* EventModel.m */,
+				27BBA48618E5C8AB00E6F0A1 /* KCSBeaconInfo+WhosAtGlue.h */,
+				27BBA48718E5C8AB00E6F0A1 /* KCSBeaconInfo+WhosAtGlue.m */,
+				27E7E486191A551D00EB4523 /* BeaconModel.h */,
+				27E7E487191A551D00EB4523 /* BeaconModel.m */,
+				27E7E488191A551D00EB4523 /* CLBeacon+WhosAtGlue.h */,
+				27E7E489191A551D00EB4523 /* CLBeacon+WhosAtGlue.m */,
+				27E7E48A191A551D00EB4523 /* KCSUser+Beacons.h */,
+				27E7E48B191A551D00EB4523 /* KCSUser+Beacons.m */,
+				27E7E48C191A551D00EB4523 /* NSDictionary+WhosAtGlue.h */,
+				27E7E48D191A551D00EB4523 /* NSDictionary+WhosAtGlue.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2727901418D9E606006BFBF3 /* General UI */ = {
+			isa = PBXGroup;
+			children = (
+				279CB6BC18CDF82100E39E42 /* UIColor+WhosAtGlue.h */,
+				279CB6BD18CDF82100E39E42 /* UIColor+WhosAtGlue.m */,
+				27D1F57618DC8D61005CD1B7 /* CircleImageView.h */,
+				27D1F57718DC8D61005CD1B7 /* CircleImageView.m */,
+				27C0C53F18F4164D00D965A2 /* PushWrapper.h */,
+				27C0C54018F4164D00D965A2 /* PushWrapper.m */,
+				27C0C54A18F822CB00D965A2 /* NSError+WhosAtGlue.h */,
+				27C0C54B18F822CB00D965A2 /* NSError+WhosAtGlue.m */,
+				271435171902ED0900999C88 /* KCSTimeConstants.h */,
+			);
+			name = "General UI";
+			sourceTree = "<group>";
+		};
+		274966C718E36547002DDF7F /* Kinvey Info */ = {
+			isa = PBXGroup;
+			children = (
+				274966C518E35CF0002DDF7F /* KinveyInfo.storyboard */,
+				274966C218E35CE6002DDF7F /* KinveyInfoTableViewController.h */,
+				274966C318E35CE6002DDF7F /* KinveyInfoTableViewController.m */,
+				27E636BA18EB4E1F0032B532 /* ComeChatViewController.h */,
+				27E636BB18EB4E1F0032B532 /* ComeChatViewController.m */,
+			);
+			name = "Kinvey Info";
+			sourceTree = "<group>";
+		};
+		2799EB2F18DA0D9500818CE7 /* Main Flow */ = {
+			isa = PBXGroup;
+			children = (
+				2799EB2A18DA0CF700818CE7 /* MainFlow.storyboard */,
+				27D1F55E18DC6B82005CD1B7 /* MainViewController.h */,
+				27D1F55F18DC6B82005CD1B7 /* MainViewController.m */,
+				2799EB2C18DA0D0D00818CE7 /* UserListTableViewController.h */,
+				2799EB2D18DA0D0D00818CE7 /* UserListTableViewController.m */,
+				27B5F52518C26D8400BFF9A1 /* DistanceViewController.h */,
+				27B5F52618C26D8400BFF9A1 /* DistanceViewController.m */,
+				27D1F56118DC70CB005CD1B7 /* RadiusView.h */,
+				27D1F56218DC70CB005CD1B7 /* RadiusView.m */,
+				272A8C4C190587F100FDCF08 /* UserCell.h */,
+				272A8C4D190587F100FDCF08 /* UserCell.m */,
+			);
+			name = "Main Flow";
+			sourceTree = "<group>";
+		};
+		27B5F4EA18C1191500BFF9A1 = {
+			isa = PBXGroup;
+			children = (
+				27B5F4FC18C1191500BFF9A1 /* WhosAtGlue */,
+				27B5F4F518C1191500BFF9A1 /* Frameworks */,
+				27B5F4F418C1191500BFF9A1 /* Products */,
+				2D163241A8734E498EA46E93 /* Pods-WhosAtGlue.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		27B5F4F418C1191500BFF9A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27B5F4F318C1191500BFF9A1 /* WhosAtGlue.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27B5F4F518C1191500BFF9A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27A554D6190FE0DA00ECB171 /* KinveyKit.framework */,
+				270EC36E18C4DBEC009759F6 /* Accounts.framework */,
+				270EC36C18C4DBE5009759F6 /* Social.framework */,
+				270EC36A18C4DBC9009759F6 /* SystemConfiguration.framework */,
+				270EC36818C4DBA6009759F6 /* CFNetwork.framework */,
+				270EC36618C4DBA1009759F6 /* MobileCoreServices.framework */,
+				270EC36418C4DB93009759F6 /* libsqlite3.dylib */,
+				270EC36218C4DB8D009759F6 /* CoreLocation.framework */,
+				27B5F4F618C1191500BFF9A1 /* Foundation.framework */,
+				27B5F4F818C1191500BFF9A1 /* CoreGraphics.framework */,
+				27B5F4FA18C1191500BFF9A1 /* UIKit.framework */,
+				27B5F50F18C1191500BFF9A1 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27B5F4FC18C1191500BFF9A1 /* WhosAtGlue */ = {
+			isa = PBXGroup;
+			children = (
+				27B5F50518C1191500BFF9A1 /* AppDelegate.h */,
+				27B5F50618C1191500BFF9A1 /* AppDelegate.m */,
+				27B5F50818C1191500BFF9A1 /* Images.xcassets */,
+				2799EB2F18DA0D9500818CE7 /* Main Flow */,
+				27FCAAD018E05220008C7835 /* User Interaction */,
+				27BBA48918EA1FE400E6F0A1 /* Stats */,
+				27EAD2C618D7841100CEAF10 /* Profile/Signin */,
+				274966C718E36547002DDF7F /* Kinvey Info */,
+				27D1F56918DC7DF4005CD1B7 /* Settings */,
+				2727901418D9E606006BFBF3 /* General UI */,
+				2727901318D9E601006BFBF3 /* Model */,
+				27B5F4FD18C1191500BFF9A1 /* Supporting Files */,
+			);
+			path = WhosAtGlue;
+			sourceTree = "<group>";
+		};
+		27B5F4FD18C1191500BFF9A1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				274381ED19182ADC00E45422 /* roomBeacons.json */,
+				274381EE19182ADC00E45422 /* events.json */,
+				27B5F4FE18C1191500BFF9A1 /* WhosAtGlue-Info.plist */,
+				27B5F4FF18C1191500BFF9A1 /* InfoPlist.strings */,
+				27B5F50218C1191500BFF9A1 /* main.m */,
+				27B5F50418C1191500BFF9A1 /* WhosAtGlue-Prefix.pch */,
+				27E833E6190802B600DC162E /* Pods-WhosAtGlue-acknowledgements.markdown */,
+				27A554BF190E9EAB00ECB171 /* PrivacyPolicy.txt */,
+				27A554D819107C5000ECB171 /* ExtraLicenses.txt */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27BBA48918EA1FE400E6F0A1 /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				279CB6C718CE360300E39E42 /* PlaygroundViewController.h */,
+				279CB6C818CE360300E39E42 /* PlaygroundViewController.m */,
+				279CB6C918CE360300E39E42 /* PlaygroundViewController.xib */,
+				27C0C54718F5E5F700D965A2 /* RadiusPlusView.h */,
+				27C0C54818F5E5F700D965A2 /* RadiusPlusView.m */,
+				279CB6B318CDDB9B00E39E42 /* TimeHeaderView.h */,
+				279CB6B418CDDB9B00E39E42 /* TimeHeaderView.m */,
+				279CB6B618CDE03100E39E42 /* BarGraphCell.h */,
+				279CB6B718CDE03100E39E42 /* BarGraphCell.m */,
+				279CB6B918CDE03C00E39E42 /* BarGraphView.h */,
+				279CB6BA18CDE03C00E39E42 /* BarGraphView.m */,
+			);
+			name = Stats;
+			sourceTree = "<group>";
+		};
+		27D1F56918DC7DF4005CD1B7 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				27D1F57418DC8130005CD1B7 /* Settings.storyboard */,
+				27D1F56418DC7DE6005CD1B7 /* SettingsTableViewController.h */,
+				27D1F56518DC7DE6005CD1B7 /* SettingsTableViewController.m */,
+				27A1E56718FB3EDA00F2D96F /* InfoTableViewController.h */,
+				27A1E56818FB3EDA00F2D96F /* InfoTableViewController.m */,
+				27E833E31908029D00DC162E /* LicenseTableViewController.h */,
+				27E833E41908029D00DC162E /* LicenseTableViewController.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		27EAD2C618D7841100CEAF10 /* Profile/Signin */ = {
+			isa = PBXGroup;
+			children = (
+				275748D118D74BA200E5D561 /* LoginViewController.h */,
+				275748D218D74BA200E5D561 /* LoginViewController.m */,
+				275748D318D74BA200E5D561 /* LoginViewController.xib */,
+				274966BD18E31CC0002DDF7F /* EmailPassword.storyboard */,
+				274966BF18E31D0E002DDF7F /* EmailPwdLoginTableViewController.h */,
+				274966C018E31D0E002DDF7F /* EmailPwdLoginTableViewController.m */,
+				27E636BD18EDB2270032B532 /* PasswordResetViewController.h */,
+				27E636BE18EDB2270032B532 /* PasswordResetViewController.m */,
+				27EAD2C418D7840A00CEAF10 /* UserProfile.storyboard */,
+				27278FFF18D8B8E7006BFBF3 /* Info1TableViewController.h */,
+				2727900018D8B8E7006BFBF3 /* Info1TableViewController.m */,
+				2727900D18D8E5B8006BFBF3 /* Info2TableViewController.h */,
+				2727900E18D8E5B8006BFBF3 /* Info2TableViewController.m */,
+			);
+			name = Profile/Signin;
+			sourceTree = "<group>";
+		};
+		27FCAAD018E05220008C7835 /* User Interaction */ = {
+			isa = PBXGroup;
+			children = (
+				27C0C53C18EF4BC700D965A2 /* UserProfileViewController.h */,
+				27C0C53D18EF4BC700D965A2 /* UserProfileViewController.m */,
+			);
+			name = "User Interaction";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27B5F4F218C1191500BFF9A1 /* WhosAtGlue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27B5F51F18C1191500BFF9A1 /* Build configuration list for PBXNativeTarget "WhosAtGlue" */;
+			buildPhases = (
+				1FC8C3CB766E497C83FA96EB /* Check Pods Manifest.lock */,
+				27B5F4EF18C1191500BFF9A1 /* Sources */,
+				27B5F4F018C1191500BFF9A1 /* Frameworks */,
+				27B5F4F118C1191500BFF9A1 /* Resources */,
+				82C1F282FCAF4596B73CDC61 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WhosAtGlue;
+			productName = Tsunami;
+			productReference = 27B5F4F318C1191500BFF9A1 /* WhosAtGlue.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27B5F4EB18C1191500BFF9A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Kinvey;
+				TargetAttributes = {
+					27B5F4F218C1191500BFF9A1 = {
+						DevelopmentTeam = 5W7CYNR7UE;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 27B5F4EE18C1191500BFF9A1 /* Build configuration list for PBXProject "WhosAtGlue" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 27B5F4EA18C1191500BFF9A1;
+			productRefGroup = 27B5F4F418C1191500BFF9A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27B5F4F218C1191500BFF9A1 /* WhosAtGlue */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27B5F4F118C1191500BFF9A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				274381F019182ADC00E45422 /* roomBeacons.json in Resources */,
+				27E833E7190802B600DC162E /* Pods-WhosAtGlue-acknowledgements.markdown in Resources */,
+				275748D518D74BA200E5D561 /* LoginViewController.xib in Resources */,
+				274381F119182ADC00E45422 /* events.json in Resources */,
+				2799EB2B18DA0CF700818CE7 /* MainFlow.storyboard in Resources */,
+				279CB6CB18CE360300E39E42 /* PlaygroundViewController.xib in Resources */,
+				27D1F57518DC8130005CD1B7 /* Settings.storyboard in Resources */,
+				27B5F50118C1191500BFF9A1 /* InfoPlist.strings in Resources */,
+				274966C618E35CF0002DDF7F /* KinveyInfo.storyboard in Resources */,
+				27A554D919107C5000ECB171 /* ExtraLicenses.txt in Resources */,
+				27B5F50918C1191500BFF9A1 /* Images.xcassets in Resources */,
+				27A554C0190E9EAB00ECB171 /* PrivacyPolicy.txt in Resources */,
+				27EAD2C518D7840A00CEAF10 /* UserProfile.storyboard in Resources */,
+				274966BE18E31CC0002DDF7F /* EmailPassword.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FC8C3CB766E497C83FA96EB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		82C1F282FCAF4596B73CDC61 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-WhosAtGlue-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27B5F4EF18C1191500BFF9A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				274966C118E31D0E002DDF7F /* EmailPwdLoginTableViewController.m in Sources */,
+				27B5F50718C1191500BFF9A1 /* AppDelegate.m in Sources */,
+				279CB6BB18CDE03C00E39E42 /* BarGraphView.m in Sources */,
+				27D1F57818DC8D61005CD1B7 /* CircleImageView.m in Sources */,
+				2799EB3218DA1C3800818CE7 /* KCSUser+WhosAtGlue.m in Sources */,
+				27BBA48818E5C8AB00E6F0A1 /* KCSBeaconInfo+WhosAtGlue.m in Sources */,
+				274966C418E35CE6002DDF7F /* KinveyInfoTableViewController.m in Sources */,
+				279CB6B518CDDB9B00E39E42 /* TimeHeaderView.m in Sources */,
+				27E636BF18EDB2270032B532 /* PasswordResetViewController.m in Sources */,
+				27B5F50318C1191500BFF9A1 /* main.m in Sources */,
+				27E7E48E191A551D00EB4523 /* BeaconModel.m in Sources */,
+				27C0C54C18F822CB00D965A2 /* NSError+WhosAtGlue.m in Sources */,
+				272A8C4E190587F100FDCF08 /* UserCell.m in Sources */,
+				27B5F52718C26D8400BFF9A1 /* DistanceViewController.m in Sources */,
+				2727900F18D8E5B8006BFBF3 /* Info2TableViewController.m in Sources */,
+				27E7E490191A551D00EB4523 /* KCSUser+Beacons.m in Sources */,
+				2727900118D8B8E7006BFBF3 /* Info1TableViewController.m in Sources */,
+				279CB6CA18CE360300E39E42 /* PlaygroundViewController.m in Sources */,
+				279CB6BE18CDF82100E39E42 /* UIColor+WhosAtGlue.m in Sources */,
+				27D1F56718DC7DE6005CD1B7 /* SettingsTableViewController.m in Sources */,
+				27C0C54118F4164D00D965A2 /* PushWrapper.m in Sources */,
+				2799EB2E18DA0D0D00818CE7 /* UserListTableViewController.m in Sources */,
+				27D1F56018DC6B82005CD1B7 /* MainViewController.m in Sources */,
+				27C0C54918F5E5F700D965A2 /* RadiusPlusView.m in Sources */,
+				27E636BC18EB4E1F0032B532 /* ComeChatViewController.m in Sources */,
+				2727901218D9E5FC006BFBF3 /* EventModel.m in Sources */,
+				27E7E48F191A551D00EB4523 /* CLBeacon+WhosAtGlue.m in Sources */,
+				27E7E491191A551D00EB4523 /* NSDictionary+WhosAtGlue.m in Sources */,
+				27A1E56918FB3EDA00F2D96F /* InfoTableViewController.m in Sources */,
+				27E833E51908029D00DC162E /* LicenseTableViewController.m in Sources */,
+				27D1F56318DC70CB005CD1B7 /* RadiusView.m in Sources */,
+				27C0C53E18EF4BC700D965A2 /* UserProfileViewController.m in Sources */,
+				279CB6B818CDE03100E39E42 /* BarGraphCell.m in Sources */,
+				275748D418D74BA200E5D561 /* LoginViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		27B5F4FF18C1191500BFF9A1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27B5F50018C1191500BFF9A1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27B5F51D18C1191500BFF9A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27B5F51E18C1191500BFF9A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27B5F52018C1191500BFF9A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D163241A8734E498EA46E93 /* Pods-WhosAtGlue.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Katz (5WT935WCFL)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WhosAtGlue/WhosAtGlue-Prefix.pch";
+				INFOPLIST_FILE = "WhosAtGlue/WhosAtGlue-Info.plist";
+				PRODUCT_NAME = WhosAtGlue;
+				PROVISIONING_PROFILE = "2369870A-7BE0-483F-AB0E-A10C04FA54B0";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		27B5F52118C1191500BFF9A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D163241A8734E498EA46E93 /* Pods-WhosAtGlue.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Kinvey, Inc. (5W7CYNR7UE)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WhosAtGlue/WhosAtGlue-Prefix.pch";
+				INFOPLIST_FILE = "WhosAtGlue/WhosAtGlue-Info.plist";
+				PRODUCT_NAME = WhosAtGlue;
+				PROVISIONING_PROFILE = "83ED8CB5-6407-4279-B514-8FF57FD4620D";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27B5F4EE18C1191500BFF9A1 /* Build configuration list for PBXProject "WhosAtGlue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27B5F51D18C1191500BFF9A1 /* Debug */,
+				27B5F51E18C1191500BFF9A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27B5F51F18C1191500BFF9A1 /* Build configuration list for PBXNativeTarget "WhosAtGlue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27B5F52018C1191500BFF9A1 /* Debug */,
+				27B5F52118C1191500BFF9A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27B5F4EB18C1191500BFF9A1 /* Project object */;
+}

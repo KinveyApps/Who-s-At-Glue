@@ -1,0 +1,18 @@
+platform :ios, "7.0"
+
+target "WhosAtGlue" do
+#Kinvey libs
+pod 'KinveyWidgets', '~> 1.0'
+pod 'KCSIBeacon', '~> 1.0'
+
+#forked for custom behavior
+pod 'RDRStickyKeyboardView', :git => 'https://github.com/mikekatz/RDRStickyKeyboardView.git'
+pod 'AJNotificationView', :git => 'https://github.com/mikekatz/AJNotificationView.git'
+
+#standard used pods
+pod 'M13Checkbox', '~> 1.0'
+pod 'TDBadgedCell', '~> 2.5'
+pod 'MKToggleButton', '~>1'
+pod 'ProgressHUD', '~> 1.3'
+end
+
