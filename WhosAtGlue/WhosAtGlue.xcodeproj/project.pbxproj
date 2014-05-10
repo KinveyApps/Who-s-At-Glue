@@ -642,7 +642,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Katz (5WT935WCFL)";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -652,7 +652,7 @@
 				GCC_PREFIX_HEADER = "WhosAtGlue/WhosAtGlue-Prefix.pch";
 				INFOPLIST_FILE = "WhosAtGlue/WhosAtGlue-Info.plist";
 				PRODUCT_NAME = WhosAtGlue;
-				PROVISIONING_PROFILE = "2369870A-7BE0-483F-AB0E-A10C04FA54B0";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -664,7 +664,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Kinvey, Inc. (5W7CYNR7UE)";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -674,7 +674,7 @@
 				GCC_PREFIX_HEADER = "WhosAtGlue/WhosAtGlue-Prefix.pch";
 				INFOPLIST_FILE = "WhosAtGlue/WhosAtGlue-Info.plist";
 				PRODUCT_NAME = WhosAtGlue;
-				PROVISIONING_PROFILE = "83ED8CB5-6407-4279-B514-8FF57FD4620D";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
