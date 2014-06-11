@@ -33,8 +33,8 @@
 #import "AJNotificationView.h"
 #import "NSError+WhosAtGlue.h"
 
-#define kEventId <#Event _id#>
-#define kKinveyBoothId <#Booth Popup _id#>
+#define kEventId @"531b025f441e63704105eaf3"
+#define kKinveyBoothId @""
 
 @interface MainViewController ()
 @property (nonatomic, strong) NSTimer* notStartedTimer;

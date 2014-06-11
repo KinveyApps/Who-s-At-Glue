@@ -1,0 +1,40 @@
+PODS:
+  - AJNotificationView (0.7)
+  - KCSIBeacon (1.1.0)
+  - KinveyWidgets (1.0.0)
+  - M13Checkbox (1.1.0)
+  - MKToggleButton (1.1.0)
+  - ProgressHUD (1.3)
+  - RDRStickyKeyboardView (0.0.2):
+    - SAMTextView (~> 0.2)
+  - SAMTextView (0.2.1)
+  - TDBadgedCell (2.5.2.1)
+
+DEPENDENCIES:
+  - AJNotificationView (from `https://github.com/mikekatz/AJNotificationView.git`)
+  - KCSIBeacon (~> 1.0)
+  - KinveyWidgets (~> 1.0)
+  - M13Checkbox (~> 1.0)
+  - MKToggleButton (~> 1)
+  - ProgressHUD (~> 1.3)
+  - RDRStickyKeyboardView (from `https://github.com/mikekatz/RDRStickyKeyboardView.git`)
+  - TDBadgedCell (~> 2.5)
+
+EXTERNAL SOURCES:
+  AJNotificationView:
+    :git: https://github.com/mikekatz/AJNotificationView.git
+  RDRStickyKeyboardView:
+    :git: https://github.com/mikekatz/RDRStickyKeyboardView.git
+
+SPEC CHECKSUMS:
+  AJNotificationView: 2d69a3105d6f604e041bac46bbe1525650ee74b9
+  KCSIBeacon: 0f2af2869d265de776b1c192748d7d0c2c069b66
+  KinveyWidgets: 573f2107ce91b16784d795956725625a30bcc4eb
+  M13Checkbox: c069a871c477d7903b06b41e207b896286bdeed3
+  MKToggleButton: 29dbdf9068cb283587853cbf553edf476189cb0a
+  ProgressHUD: 56af86269058221d1975dd3e85cf7fbf44dba199
+  RDRStickyKeyboardView: 6d2e02bb776048a3537ba5aca9660a060e1e09a7
+  SAMTextView: 1062a784ba7b2080b0c17748001c416b53010b4b
+  TDBadgedCell: dce5feab0caa3c255aed36327012674a1b65e650
+
+COCOAPODS: 0.32.1

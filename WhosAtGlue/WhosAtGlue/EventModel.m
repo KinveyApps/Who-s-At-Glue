@@ -28,7 +28,7 @@
 NSString* const MessagesUpdatedNotification = @"MessagesUpdated";
 NSString* const ConferenceStartingNotification = @"ConferenceStartingNotification";
 
-#define kEventId <#Event _id#>
+#define kEventId @"531b025f441e63704105eaf3"
 #define kUpdateIntervalShort 5 * SEC_PER_MINUTE
 #define kUpdateIntervalLong  6 * SEC_PER_HOUR
 #define kUpdateIntervalNormal 20 * SEC_PER_MINUTE

@@ -38,8 +38,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    KCSClientConfiguration* configuration = [KCSClientConfiguration configurationWithAppKey:@"<#App Key#>"
-                                                                                     secret:@"<#App Secret#>"
+    KCSClientConfiguration* configuration = [KCSClientConfiguration configurationWithAppKey:@"kid_eTsDEAHsI9"
+                                                                                     secret:@"d769fbfbbc3e4966a27c61b5497bbfe4"
                                                                                     options:@{KCS_LINKEDIN_SECRET_KEY:@"<#LinkedIn Secret Key#>",
                                                                                               KCS_LINKEDIN_API_KEY:@"<#LinkedIn API Key#>",
                                                                                               KCS_LINKEDIN_ACCEPT_REDIRECT:@"<#LinkedIn Accept URL#>",
