@@ -199,3 +199,17 @@ Apache License
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
+
+
+Summary:
+* KinveyKit [KinveyKit license] - used for Kinvey
+* AJNotificationView [MIT] - notification view
+* KCSIBeacon [Apache 2.0] - beacon management
+* KinveyWidgets [Apache 2.0] - Login widget
+* M13Checkbox [MIT] - checkbox view
+* MKToggleButton [Apache 2.0] - button view
+* ProgressHUD [MIT] - progress view
+* RDRStickyKeyboardView [MIT] - keyboard management
+* SAMTextView [MIT] - chat text view
+* TDBadgedCell [MIT] - cell gadgets
+
