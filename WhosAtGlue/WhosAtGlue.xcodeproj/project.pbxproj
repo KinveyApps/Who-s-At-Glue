@@ -66,6 +66,8 @@
 		27E833E51908029D00DC162E /* LicenseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E833E41908029D00DC162E /* LicenseTableViewController.m */; };
 		27E833E7190802B600DC162E /* Pods-WhosAtGlue-acknowledgements.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 27E833E6190802B600DC162E /* Pods-WhosAtGlue-acknowledgements.markdown */; };
 		27EAD2C518D7840A00CEAF10 /* UserProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27EAD2C418D7840A00CEAF10 /* UserProfile.storyboard */; };
+		A0C58F541A1DC98D004CC660 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A0C58F511A1DC98D004CC660 /* ProgressHUD.bundle */; };
+		A0C58F551A1DC98D004CC660 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C58F531A1DC98D004CC660 /* ProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -164,9 +166,12 @@
 		27E7E48D191A551D00EB4523 /* NSDictionary+WhosAtGlue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+WhosAtGlue.m"; sourceTree = "<group>"; };
 		27E833E31908029D00DC162E /* LicenseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LicenseTableViewController.h; sourceTree = "<group>"; };
 		27E833E41908029D00DC162E /* LicenseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LicenseTableViewController.m; sourceTree = "<group>"; };
-		27E833E6190802B600DC162E /* Pods-WhosAtGlue-acknowledgements.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "Pods-WhosAtGlue-acknowledgements.markdown"; path = "../Pods/Pods-WhosAtGlue-acknowledgements.markdown"; sourceTree = "<group>"; };
+		27E833E6190802B600DC162E /* Pods-WhosAtGlue-acknowledgements.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "Pods-WhosAtGlue-acknowledgements.markdown"; path = "../Pods/Target Support Files/Pods-WhosAtGlue/Pods-WhosAtGlue-acknowledgements.markdown"; sourceTree = "<group>"; };
 		27EAD2C418D7840A00CEAF10 /* UserProfile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserProfile.storyboard; sourceTree = "<group>"; };
 		2D163241A8734E498EA46E93 /* Pods-WhosAtGlue.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhosAtGlue.xcconfig"; path = "Pods/Pods-WhosAtGlue.xcconfig"; sourceTree = "<group>"; };
+		A0C58F511A1DC98D004CC660 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		A0C58F521A1DC98D004CC660 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		A0C58F531A1DC98D004CC660 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,6 +303,7 @@
 		27B5F4FC18C1191500BFF9A1 /* WhosAtGlue */ = {
 			isa = PBXGroup;
 			children = (
+				A0C58F501A1DC98D004CC660 /* ProgressHUD */,
 				27B5F50518C1191500BFF9A1 /* AppDelegate.h */,
 				27B5F50618C1191500BFF9A1 /* AppDelegate.m */,
 				27B5F50818C1191500BFF9A1 /* Images.xcassets */,
@@ -391,6 +397,16 @@
 			name = "User Interaction";
 			sourceTree = "<group>";
 		};
+		A0C58F501A1DC98D004CC660 /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				A0C58F511A1DC98D004CC660 /* ProgressHUD.bundle */,
+				A0C58F521A1DC98D004CC660 /* ProgressHUD.h */,
+				A0C58F531A1DC98D004CC660 /* ProgressHUD.m */,
+			);
+			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -462,6 +478,7 @@
 				279CB6CB18CE360300E39E42 /* PlaygroundViewController.xib in Resources */,
 				27D1F57518DC8130005CD1B7 /* Settings.storyboard in Resources */,
 				27B5F50118C1191500BFF9A1 /* InfoPlist.strings in Resources */,
+				A0C58F541A1DC98D004CC660 /* ProgressHUD.bundle in Resources */,
 				274966C618E35CF0002DDF7F /* KinveyInfo.storyboard in Resources */,
 				27A554D919107C5000ECB171 /* ExtraLicenses.txt in Resources */,
 				27B5F50918C1191500BFF9A1 /* Images.xcassets in Resources */,
@@ -528,6 +545,7 @@
 				2727900F18D8E5B8006BFBF3 /* Info2TableViewController.m in Sources */,
 				27E7E490191A551D00EB4523 /* KCSUser+Beacons.m in Sources */,
 				2727900118D8B8E7006BFBF3 /* Info1TableViewController.m in Sources */,
+				A0C58F551A1DC98D004CC660 /* ProgressHUD.m in Sources */,
 				279CB6CA18CE360300E39E42 /* PlaygroundViewController.m in Sources */,
 				279CB6BE18CDF82100E39E42 /* UIColor+WhosAtGlue.m in Sources */,
 				27D1F56718DC7DE6005CD1B7 /* SettingsTableViewController.m in Sources */,
