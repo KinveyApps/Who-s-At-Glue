@@ -5,6 +5,7 @@ iBeacon-enabled conference meet-up app for Gluecon
 
 ## What the App Does
 
+This is a [Kinvey](http://www.kinvey.com) iOS app that illustrates how to make it easy to create an application for a different kind of events, that give possibility to manage interests with help of iBeacon. Application use iBeacon to tracing User's location and post him notifications.
 
 ## Backend Setup 
 
@@ -50,20 +51,25 @@ Upload the business logic scripts to the new app.
 
 ## LinkedIn Setup
 The app is set up to use LinkedIn login, since there is also an option for creating a new app account with just email and password, it's optional.
-
-Follow these instructions to create a new app with LinkedIn: XXXX
+Then update following code in `AppDelegate.m`
+```
+@{KCS_LINKEDIN_SECRET_KEY:@"<#LinkedIn Secret Key#>",
+KCS_LINKEDIN_API_KEY:@"<#LinkedIn API Key#>",
+KCS_LINKEDIN_ACCEPT_REDIRECT:@"<#LinkedIn Accept URL#>",
+KCS_LINKEDIN_CANCEL_REDIRECT:@"<#LinkedIn Cancel URL#>"}
+```
 
 ## App Setup
 
 1. Download the source 
 
-        git clone
+        `git clone`
      
 2. Before the app can be used, the dependencies have to be pulled through CocoaPods. If you've never used CocoaPods before, first follow the instalation steps here [http://cocoapods.org/](http://cocoapods.org/). 
 
 3. Since the Podfile is in the repo, just install it:
 
-        pod install
+        `pod install`
     
 
 4. Open `WhosAtGlue.xcworkspace`
@@ -75,7 +81,11 @@ Follow these instructions to create a new app with LinkedIn: XXXX
 
 ## Customizing the App
 
+You can use Mock data for easy use this tutorial.
+
 ### Beacon of Interest Popup
+
+Application use `AJNotificationView` for notification user when he appears near something in his interests. User can change his interests in `SettingsTableViewController`.
 
 ## License
 
